@@ -17,7 +17,7 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 | 637,776,160                                       | 4    | 655,360                       | 10                                            | 2.551                     | 0.6396                               | 0.3216                                |
 | 637,776,160                                       | 2    | 327,680                       | 5                                             | 2.551                     | 0.6383                               | 0.3203                                |
 
-#### The detailed results for Whisper classification model with LLM's LoRA and QLoRA Adapters with varying rank values and trainable parameter are reported below in the table
+#### Table 2: Detailed results for the Whisper classification model with LLM's LoRA and QLoRA adapters, showing varying rank values and trainable parameters.
 
 |      |                                        |           |    LoRA   |  LoRA  |   LoRA   |   QLoRA   |  QLoRA |   QLoRA  |
 |------|:--------------------------------------:|:---------:|:---------:|:------:|:--------:|:---------:|:------:|:--------:|
@@ -40,6 +40,8 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 
 
 #### As part of an ablation study, we evaluated the Whisper model's performance on Kannada language data using 5-fold cross-validation to ensure that the model is not overfitting. The classification reports for all five folds, along with their average, are presented in the table below.
+
+#### Table 3: 5-Fold Cross-Validation results for Kannada language.
 
 | Fold    | Accuracy | C-1 P | C-1 R  | C-1 F1 | C-2 P | C-2 R | C-2 F1 | C-3 P | C-3 R | C-3 F1 | C-4 P | C-4 R | C-4 F1 |
 |---------|----------|-------|--------|--------|-------|-------|--------|-------|-------|--------|-------|-------|--------|
