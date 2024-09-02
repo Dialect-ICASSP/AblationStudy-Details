@@ -8,3 +8,21 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 
 In addition to these approaches, we also conducted experiments on our custom dataset using various standard models, including support vector machines (SVM), 1-dimensional convolutional neural networks (1D-CNN), 2-dimensional CNN (2D-CNN), long short-term memory (LSTM) networks, and a pre-trained automatic speech recognition (ASR) model for feature extraction and classification using the Wav2Vec2-large-XLS-R-53 model.
 
+|    Rank  & Trainable Parameters    |  Languages |    LoRA   |        |          |   QLoRA   |        |          |
+|:----------------------------------:|:----------:|:---------:|:------:|:--------:|:---------:|:------:|:--------:|
+|                                    |            | Precision | Recall | F1-Score | Precision | Recall | F1-Score |
+|  Rank-24, Trainable Parameters-61% | Tamil      | 0.84      | 0.83   | 0.83     | 0.84      | 0.83   | 0.83     |
+|                                    | Malayalam  | 0.86      | 0.75   | 0.76     | 0.74      | 0.74   | 0.74     |
+|                                    | Kannada    | 0.99      | 0.99   | 0.99     | 0.99      | 0.99   | 0.99     |
+|  Rank-16, Trainable Parameters-40% | Tamil      | 0.86      | 0.85   | 0.85     | 0.88      | 0.88   |          |
+| Trainable                          | Malayalam  | 0.87      | 0.84   | 0.85     | 0.78      | 0.75   | 0.76     |
+| Parameters-61%                     | Kannada    | 0.99      | 0.99   | 0.99     | 0.99      | 0.99   | 0.99     |
+|  Rank-8, Trainable Parameters-20%  | Tamil      | 0.83      | 0.83   | 0.83     | 0.78      | 0.79   | 0.78     |
+|                                    | Malayalam  | 0.75      | 0.75   | 0.75     | 0.80      | 0.78   | 0.79     |
+|                                    | Kannada    | 0.99      | 0.99   | 0.99     | 0.98      | 0.98   | 0.98     |
+|  Rank-4, Trainable Parameters-10%  | Tamil      | 0.82      | 0.81   | 0.81     | 0.87      | 0.86   | 0.86     |
+| Trainable                          | Malayalam  | 0.81      | 0.75   | 0.74     | 0.91      | 0.89   | 0.90     |
+| Parameters-20%                     | Kannada    | 0.99      | 0.99   | 0.99     | 0.99      | 0.99   | 0.99     |
+|  Rank-2, Trainable Parameters-5%   | Tamil      | 0.85      | 0.84   | 0.84     | 0.81      | 0.80   | 0.80     |
+|                                    | Malayalam  | 0.87      | 0.83   | 0.84     | 0.90      | 0.87   | 0.88     |
+|                                    | Kannada    | 0.98      | 0.97   | 0.97     | 0.97      | 0.97   | 0.97     |
