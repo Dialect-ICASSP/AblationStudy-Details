@@ -14,7 +14,7 @@ In addition to these approaches, we also conducted experiments on our custom dat
 |  Rank-24, Trainable Parameters-61% | Tamil      | 0.84      | 0.83   | 0.83     | 0.84      | 0.83   | 0.83     |
 |                                    | Malayalam  | 0.86      | 0.75   | 0.76     | 0.74      | 0.74   | 0.74     |
 |                                    | Kannada    | 0.99      | 0.99   | 0.99     | 0.99      | 0.99   | 0.99     |
-|  Rank-16, Trainable Parameters-40% | Tamil      | 0.86      | 0.85   | 0.85     | 0.88      | 0.88   |          |
+|  Rank-16, Trainable Parameters-40% | Tamil      | 0.86      | 0.85   | 0.85     | 0.88      | 0.88   | 0.88     |
 | Trainable                          | Malayalam  | 0.87      | 0.84   | 0.85     | 0.78      | 0.75   | 0.76     |
 | Parameters-61%                     | Kannada    | 0.99      | 0.99   | 0.99     | 0.99      | 0.99   | 0.99     |
 |  Rank-8, Trainable Parameters-20%  | Tamil      | 0.83      | 0.83   | 0.83     | 0.78      | 0.79   | 0.78     |
