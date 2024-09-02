@@ -10,24 +10,7 @@ In addition to these approaches, we also conducted experiments on our custom dat
 
 #### The detailed results for Whisper classification model with LLM's LoRA and QLoRA Adapters with varying rank values and trainable parameter are reported below in the table
 
-|                                  |           |    LoRA   |  LoRA  |   LoRA   |   QLoRA   |  QLoRA |   QLoRA  |
-|:--------------------------------:|:---------:|:---------:|:------:|:--------:|:---------:|:------:|:--------:|
-| Rank & Trainable Parameters      | Languages | Precision | Recall | F1-Score | Precision | Recall | F1-Score |
-| Rank-24,Trainable Parameters-61% | Tamil     | 0.84      | 0.83   | 0.83     | 0.84      | 0.83   | 0.83     |
-| Rank-24,Trainable Parameters-61% | Malayalam | 0.86      | 0.75   | 0.76     | 0.74      | 0.74   | 0.74     |
-| Rank-24,Trainable Parameters-61% | Kannada   | 0.99      | 0.99   | 0.99     | 0.99      | 0.99   | 0.99     |
-| Rank-16,Trainable Parameters-40% | Tamil     | 0.86      | 0.85   | 0.85     | 0.88      | 0.88   | 0.88     |
-| Rank-16,Trainable Parameters-40% | Malayalam | 0.87      | 0.84   | 0.85     | 0.78      | 0.75   | 0.76     |
-| Rank-16,Trainable Parameters-40% | Kannada   | 0.99      | 0.99   | 0.99     | 0.99      | 0.99   | 0.99     |
-| Rank-8,Trainable Parameters-20%  | Tamil     | 0.83      | 0.83   | 0.83     | 0.78      | 0.79   | 0.78     |
-| Rank-8,Trainable Parameters-20%  | Malayalam | 0.75      | 0.75   | 0.75     | 0.80      | 0.78   | 0.79     |
-| Rank-8,Trainable Parameters-20%  | Kannada   | 0.99      | 0.99   | 0.99     | 0.98      | 0.98   | 0.98     |
-| Rank-4,Trainable Parameters-10%  | Tamil     | 0.82      | 0.81   | 0.81     | 0.87      | 0.86   | 0.86     |
-| Rank-4,Trainable Parameters-10%  | Malayalam | 0.81      | 0.75   | 0.74     | 0.91      | 0.89   | 0.90     |
-| Rank-4,Trainable Parameters-10%  | Kannada   | 0.99      | 0.99   | 0.99     | 0.99      | 0.99   | 0.99     |
-| Rank-2,TrainableParameters-5%    | Tamil     | 0.85      | 0.84   | 0.84     | 0.81      | 0.80   | 0.80     |
-| Rank-2,TrainableParameters-5%    | Malayalam | 0.87      | 0.83   | 0.84     | 0.90      | 0.87   | 0.88     |
-| Rank-2,TrainableParameters-5%    | Kannada   | 0.98      | 0.97   | 0.97     | 0.97      | 0.97   | 0.97     |
+
 
 |      |                                        |           |    LoRA   |  LoRA  |   LoRA   |   QLoRA   |  QLoRA |   QLoRA  |
 |------|:--------------------------------------:|:---------:|:---------:|:------:|:--------:|:---------:|:------:|:--------:|
