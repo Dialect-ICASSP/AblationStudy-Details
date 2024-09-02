@@ -6,11 +6,9 @@ We introduced a modified Whisper architecture, incorporating large language mode
 
 In common fine-tuning, the entire pre-trained model is updated during the training process, meaning every parameter in the model is adjusted based on the new task-specific data. In contrast, PEFT focuses on fine-tuning a smaller subset of the model’s parameters, often by introducing additional task-specific parameters while keeping most of the pre-trained model frozen. Techniques such as LoRA (Low-Rank Adaptation) and QLoRA (Quantized LoRA) are commonly used in PEFT. In both LoRA and QLoRA, the total number of trainable parameters is controlled by a hyperparameter called "Rank." In our paper, we reported the results of the Whisper model using LoRA and QLoRA, both with a rank value of 32. The results for other rank values (24, 16, 8, 4, and 2) were investigated in our ablation study and are presented in Figure 4 of the paper. The detailed table of training parameters and macro-average F1 scores is available in this repository for reference.
 
-In addition to these approaches, we also conducted experiments on our custom dataset using various standard models, including support vector machines (SVM), 1-dimensional convolutional neural networks (1D-CNN), 2-dimensional CNN (2D-CNN), long short-term memory (LSTM) networks, and a pre-trained automatic speech recognition (ASR) model for feature extraction and classification using the Wav2Vec2-large-XLS-R-53 model.
+
 
 #### The detailed results for Whisper classification model with LLM's LoRA and QLoRA Adapters with varying rank values and trainable parameter are reported below in the table
-
-
 
 |      |                                        |           |    LoRA   |  LoRA  |   LoRA   |   QLoRA   |  QLoRA |   QLoRA  |
 |------|:--------------------------------------:|:---------:|:---------:|:------:|:--------:|:---------:|:------:|:--------:|
@@ -30,3 +28,7 @@ In addition to these approaches, we also conducted experiments on our custom dat
 | 2    | 5%                                     | Tamil     | 0.85      | 0.84   | 0.84     | 0.81      | 0.80   | 0.80     |
 | 2    | 5%                                     | Malayalam | 0.87      | 0.83   | 0.84     | 0.90      | 0.87   | 0.88     |
 | 2    | 5%                                     | Kannada   | 0.98      | 0.97   | 0.97     | 0.97      | 0.97   | 0.97     |
+
+
+In addition to these approaches, we also conducted experiments on our custom dataset using various standard models, including support vector machines (SVM), 1-dimensional convolutional neural networks (1D-CNN), 2-dimensional CNN (2D-CNN), long short-term memory (LSTM) networks, and a pre-trained automatic speech recognition (ASR) model for feature extraction and classification using the Wav2Vec2-large-XLS-R-53 model.
+
