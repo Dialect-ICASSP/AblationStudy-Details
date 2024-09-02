@@ -6,7 +6,16 @@ We introduced a modified Whisper architecture, incorporating large language mode
 
 In common fine-tuning, the entire pre-trained model is updated during the training process, meaning every parameter in the model is adjusted based on the new task-specific data. In contrast, PEFT focuses on fine-tuning a smaller subset of the model’s parameters, often by introducing additional task-specific parameters while keeping most of the pre-trained model frozen. Techniques such as LoRA (Low-Rank Adaptation) and QLoRA (Quantized LoRA) are commonly used in PEFT. In both LoRA and QLoRA, the total number of trainable parameters is controlled by a hyperparameter called "Rank." In our paper, we reported the results of the Whisper model using LoRA and QLoRA, both with a rank value of 32. The results for other rank values (24, 16, 8, 4, and 2) were investigated in our ablation study and are presented in Figure 4 of the paper. The detailed table of training parameters and macro-average F1 scores is available in this repository for reference.
 
+#### Effectiveness of using LoRA and QLoRA with whisper
 
+|      Whisper-large-v2 (Total Trainable Parameters | Rank | Reduced Trainable  Parameters | Reduced Trainable  Parameters (in percentage) | Original Model  Size (GB) | LoRA (8-bit Quantization)  Size (GB) | QLoRA (4-bit Quantization)  Size (GB) |
+|---------------------------------------------------|------|-------------------------------|-----------------------------------------------|---------------------------|--------------------------------------|---------------------------------------|
+| 637,776,160                                       | 32   | 655,360                       | 80                                            | 2.551                     | 0.6396                               | 0.3216                                |
+| 637,776,160                                       | 24   | 3,932,160                     | 61                                            | 2.551                     | 0.645                                | 0.332                                 |
+| 637,776,160                                       | 16   | 2,621,440                     | 40                                            | 2.551                     | 0.645                                | 0.328                                 |
+| 637,776,160                                       | 8    | 1,310,720                     | 20                                            | 2.551                     | 0.642                                | 0.324                                 |
+| 637,776,160                                       | 4    | 655,360                       | 10                                            | 2.551                     | 0.6396                               | 0.3216                                |
+| 637,776,160                                       | 2    | 327,680                       | 5                                             | 2.551                     | 0.6383                               | 0.3203                                |
 
 #### The detailed results for Whisper classification model with LLM's LoRA and QLoRA Adapters with varying rank values and trainable parameter are reported below in the table
 
