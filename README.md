@@ -41,7 +41,7 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 
 #### As part of an ablation study, we evaluated the Whisper model's performance on Kannada language data using 5-fold cross-validation to ensure that the model is not overfitting. The classification reports for all five folds, along with their average, are presented in the table below.
 
-#### Table 3: 5-Fold Cross-Validation results for Kannada language.
+#### Table 3: 5-Fold Cross-Validation results for Kannada language. C-1, C-2, C-3, and C-4 refer to Class 1, Class 2, Class 3, and Class 4, respectively. P, R, F1, and Acc denote Precision, Recall, F1 Score, and Accuracy.
 
 | Fold    | Accuracy | C-1 P | C-1 R  | C-1 F1 | C-2 P | C-2 R | C-2 F1 | C-3 P | C-3 R | C-3 F1 | C-4 P | C-4 R | C-4 F1 |
 |---------|----------|-------|--------|--------|-------|-------|--------|-------|-------|--------|-------|-------|--------|
