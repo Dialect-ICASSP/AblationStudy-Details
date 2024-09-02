@@ -8,7 +8,7 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 
 #### Table 1: Model Size Estimates for Different Quantization Techniques
 
-|      Whisper-large-v2 (Total Trainable Parameters | Rank | Reduced Trainable  Parameters | Reduced Trainable  Parameters (in percentage) | Original Model  Size (GB) | LoRA (8-bit Quantization)  Size (GB) | QLoRA (4-bit Quantization)  Size (GB) |
+|      Whisper-large-v2 (Total Trainable Parameters) | Rank | Reduced Trainable  Parameters | Reduced Trainable  Parameters (in percentage) | Original Model  Size (GB) | LoRA (8-bit Quantization)  Size (GB) | QLoRA (4-bit Quantization)  Size (GB) |
 |---------------------------------------------------|------|-------------------------------|-----------------------------------------------|---------------------------|--------------------------------------|---------------------------------------|
 | 637,776,160                                       | 32   | 5,242,880                       | 80                                            | 2.551                     | 0.654                               | 0.337                               |
 | 637,776,160                                       | 24   | 3,932,160                     | 61                                            | 2.551                     | 0.645                                | 0.332                                 |
