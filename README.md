@@ -41,7 +41,7 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 
 #### As part of an ablation study, we evaluated the Whisper model's performance on Kannada language data using 5-fold cross-validation to ensure that the model is not overfitting. The classification reports for all five folds, along with their average, are presented in the table below.
 
-#### Table 3: 5-Fold Cross-Validation results for Kannada language. C-1, C-2, C-3, and C-4 refer to Class 1, Class 2, Class 3, and Class 4, respectively. P, R, F1, and Acc denote Precision, Recall, F1 Score, and Accuracy.
+#### Table 3: 5-Fold Cross-Validation results for Kannada language. C-1, C-2, C-3, and C-4 refer to Class 1 (Coastal), Class 2 (North), Class 3 (South), and Class 4 (Uttara-Kannada), respectively. P, R, F1, and Acc denote Precision, Recall, F1 Score, and Accuracy.
 
 | Fold    | Accuracy | C-1 P | C-1 R  | C-1 F1 | C-2 P | C-2 R | C-2 F1 | C-3 P | C-3 R | C-3 F1 | C-4 P | C-4 R | C-4 F1 |
 |---------|----------|-------|--------|--------|--------|-------|--------|-------|-------|--------|-------|-------|--------|
@@ -56,5 +56,17 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 ##### **Interpretation:** The cross-validation results show that the model achieves a consistent accuracy of 99% across all five folds, with no significant variation in performance metrics. The perfect precision, recall, and F1 scores for Class 1 and Class 4, as well as very high scores for Class 2 and Class 3, across each fold further indicate that the model is not overfitting. The uniform performance across different folds confirms that the model generalizes well and maintains its effectiveness regardless of the specific subset of data used for training and validation.
 
 
-In addition to these approaches, we also conducted experiments on our custom dataset using various standard models, including support vector machines (SVM), 1-dimensional convolutional neural networks (1D-CNN), 2-dimensional CNN (2D-CNN), long short-term memory (LSTM) networks, and a pre-trained automatic speech recognition (ASR) model for feature extraction and classification using the Wav2Vec2-large-XLS-R-53 model.
+#### In addition to these approaches, we also conducted experiments on our custom dataset using various standard models, including support vector machines (SVM), 1-dimensional convolutional neural networks (1D-CNN), 2-dimensional CNN (2D-CNN), long short-term memory (LSTM) networks, and a pre-trained automatic speech recognition (ASR) model for feature extraction and classification using the Wav2Vec2-large-XLS-R-53 model.
+
+#### Table 4: Performance of standard models on our custom dataset across Tamil, Malayalam, and Kannada languages, including Macro Average Precision, Recall, and F1-Score for each language.
+
+|                   | Tamil     | Tamil  | Tamil    | Malayalam | Malayalam | Malayalam | Kannada   | Kannada | Kannada  |
+|-------------------|-----------|--------|----------|-----------|-----------|-----------|-----------|---------|----------|
+| Model Names       | Precision | Recall | F1-Score | Precision | Recall    | F1-Score  | Precision | Recall  | F1-Score |
+| SVM               | 0.73      | 0.72   | 0.72     | 0.81      | 0.80      | 0.80      | 0.91      | 0.91    | 0.91     |
+| LSTM              | 0.84      | 0.83   | 0.83     | 0.86      | 0.84      | 0.85      | 0.97      | 0.97    | 0.97     |
+| 1D-CNN            | 0.81      | 0.81   | 0.81     | 0.88      | 0.90      | 0.88      | 0.96      | 0.96    | 0.96     |
+| 2D-CNN            | 0.78      | 0.77   | 0.76     | 0.88      | 0.82      | 0.83      | 0.97      | 0.97    | 0.97     |
+| Wav2Vec2-XLS-R-53 | 0.68      | 0.63   | 0.61     | 0.90      | 0.89      | 0.90      | 0.96      | 0.97    | 0.96     |
+
 
