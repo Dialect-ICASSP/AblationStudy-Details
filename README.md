@@ -58,15 +58,15 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 
 #### In addition to these approaches, we also conducted experiments on our custom dataset using various standard models, including support vector machines (SVM), 1-dimensional convolutional neural networks (1D-CNN), 2-dimensional CNN (2D-CNN), long short-term memory (LSTM) networks, and a pre-trained automatic speech recognition (ASR) model for feature extraction and classification using the Wav2Vec2-large-XLS-R-53 model.
 
-#### Table 4: Performance of standard models on our custom dataset across Tamil, Malayalam, and Kannada languages, including Macro Average Precision, Recall, and F1-Score for each language.
+#### Table 4: Performance of standard models and traditional feature-based appraoches on our custom dataset across Tamil, Malayalam, and Kannada languages, including Macro Average Precision, Recall, and F1-Score for each language.
 
 |                   | Tamil     | Tamil  | Tamil    | Malayalam | Malayalam | Malayalam | Kannada   | Kannada | Kannada  |
 |-------------------|-----------|--------|----------|-----------|-----------|-----------|-----------|---------|----------|
 | Model Names       | Precision | Recall | F1-Score | Precision | Recall    | F1-Score  | Precision | Recall  | F1-Score |
-| SVM               | 0.73      | 0.72   | 0.72     | 0.81      | 0.80      | 0.80      | 0.91      | 0.91    | 0.91     |
-| LSTM              | 0.84      | 0.83   | 0.83     | 0.86      | 0.84      | 0.85      | 0.97      | 0.97    | 0.97     |
-| 1D-CNN            | 0.81      | 0.81   | 0.81     | 0.88      | 0.90      | 0.88      | 0.96      | 0.96    | 0.96     |
-| 2D-CNN            | 0.78      | 0.77   | 0.76     | 0.88      | 0.82      | 0.83      | 0.97      | 0.97    | 0.97     |
-| Wav2Vec2-XLS-R-53 | 0.68      | 0.63   | 0.61     | 0.90      | 0.89      | 0.90      | 0.96      | 0.97    | 0.96     |
-
+| MFCCs+DNN         | 0.84      | 0.83   | 0.83     | 0.84      | 0.81      | 0.82      | 0.95      | 0.95    | 0.95     |
+| eGeMAPS+DNN       | 0.68      | 0.68   | 0.66     | 0.69      | 0.65      | 0.66      | 0.86      | 0.86    | 0.86     |
+| SVM+MFCCs         | 0.73      | 0.72   | 0.72     | 0.81      | 0.80      | 0.80      | 0.91      | 0.91    | 0.91     |
+| LSTM+MFCCs        | 0.84      | 0.83   | 0.83     | 0.86      | 0.84      | 0.85      | 0.97      | 0.97    | 0.97     |
+| 1D-CNN+MFCCs      | 0.81      | 0.81   | 0.81     | 0.88      | 0.90      | 0.88      | 0.96      | 0.96    | 0.96     |
+| 2D-CNN+MFCCs      | 0.78      | 0.77   | 0.76     | 0.88      | 0.82      | 0.83      | 0.97      | 0.97    | 0.97     |
 
