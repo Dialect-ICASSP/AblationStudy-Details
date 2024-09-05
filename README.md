@@ -63,11 +63,11 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 
 |                   | Tamil     | Tamil  | Tamil    | Malayalam | Malayalam | Malayalam | Kannada   | Kannada | Kannada  |
 |-------------------|-----------|--------|----------|-----------|-----------|-----------|-----------|---------|----------|
-| Model Names       | Precision | Recall | F1-Score | Precision | Recall    | F1-Score  | Precision | Recall  | F1-Score |
+| Feature-based Classifiers       | Precision | Recall | F1-Score | Precision | Recall    | F1-Score  | Precision | Recall  | F1-Score |
 | MFCCs+DNN         | 0.84      | 0.83   | 0.83     | 0.84      | 0.81      | 0.82      | 0.95      | 0.95    | 0.95     |
 | eGeMAPS+DNN       | 0.68      | 0.68   | 0.66     | 0.69      | 0.65      | 0.66      | 0.86      | 0.86    | 0.86     |
-| SVM+MFCCs         | 0.73      | 0.72   | 0.72     | 0.81      | 0.80      | 0.80      | 0.91      | 0.91    | 0.91     |
-| LSTM+MFCCs        | 0.84      | 0.83   | 0.83     | 0.86      | 0.84      | 0.85      | 0.97      | 0.97    | 0.97     |
-| 1D-CNN+MFCCs      | 0.81      | 0.81   | 0.81     | 0.88      | 0.90      | 0.88      | 0.96      | 0.96    | 0.96     |
-| 2D-CNN+MFCCs      | 0.78      | 0.77   | 0.76     | 0.88      | 0.82      | 0.83      | 0.97      | 0.97    | 0.97     |
+| MFCCs+SVM        | 0.73      | 0.72   | 0.72     | 0.81      | 0.80      | 0.80      | 0.91      | 0.91    | 0.91     |
+| MFCCs+LSTM       | 0.84      | 0.83   | 0.83     | 0.86      | 0.84      | 0.85      | 0.97      | 0.97    | 0.97     |
+| MFCCs+1D-CNN      | 0.81      | 0.81   | 0.81     | 0.88      | 0.90      | 0.88      | 0.96      | 0.96    | 0.96     |
+| MFCCs+2D-CNN      | 0.78      | 0.77   | 0.76     | 0.88      | 0.82      | 0.83      | 0.97      | 0.97    | 0.97     |
 
