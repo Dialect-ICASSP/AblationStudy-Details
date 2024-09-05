@@ -73,47 +73,34 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 
 
 
-# Creating the classification report table in markdown format
+#### Table 5: Performance Evaluation of Whisper+LoRA on AccentDB database.
+
 | Class | Precision | Recall | F1-Score |
 |-------|-----------|--------|----------|
-| 0     | 0.995     | 0.993  | 0.994    |
-| 1     | 0.996     | 0.979  | 0.987    |
-| 2     | 0.998     | 0.982  | 0.990    |
-| 3     | 0.987     | 0.969  | 0.978    |
-| 4     | 0.998     | 0.988  | 0.993    |
-| 5     | 0.998     | 0.998  | 0.998    |
-| 6     | 0.989     | 0.996  | 0.993    |
-| 7     | 0.991     | 0.995  | 0.993    |
-| 8     | 0.984     | 0.992  | 0.988    |
+| American     | 0.995     | 0.993  | 0.994    |
+| Bangla     | 0.996     | 0.979  | 0.987    |
+| Indian     | 0.998     | 0.982  | 0.990    |
+| Odiya     | 0.987     | 0.969  | 0.978    |
+| Welsh     | 0.998     | 0.988  | 0.993    |
+| Australian     | 0.998     | 0.998  | 0.998    |
+| British     | 0.989     | 0.996  | 0.993    |
+| Malayalam     | 0.991     | 0.995  | 0.993    |
+| Telugu     | 0.984     | 0.992  | 0.988    |
 
-# Classification Report
+#### Table 5: Performance Evaluation of Whisper+QLoRA on AccentDB database.
 
-Below is the classification report for the confusion matrix. It provides precision, recall, F1-score, and support for each class, along with the macro average and overall accuracy.
+| Class   | Precision | Recall  | F1-Score | 
+|---------|-----------|---------|----------|
+| American | 0.999     | 0.998   | 0.999    | 
+| Bangla | 1.000     | 1.000   | 1.000    | 
+| Indian | 1.000     | 0.998   | 0.999    | 
+| Odiya | 1.000     | 0.996   | 0.998    | 
+| Welsh | 1.000     | 1.000   | 1.000    | 
+| Australian | 0.996     | 0.996   | 0.996    | 
+| British | 1.000     | 1.000   | 1.000    | 
+| Malayalam | 1.000     | 1.000   | 1.000    | 
+| Telugu | 1.000     | 1.000   | 1.000    | 
 
-| Class   | Precision | Recall  | F1-Score | Support |
-|---------|-----------|---------|----------|---------|
-| Class 0 | 0.999     | 0.998   | 0.999    | 4148    |
-| Class 1 | 1.000     | 1.000   | 1.000    | 1069    |
-| Class 2 | 1.000     | 0.998   | 0.999    | 1036    |
-| Class 3 | 1.000     | 0.996   | 0.998    | 520     |
-| Class 4 | 1.000     | 1.000   | 1.000    | 519     |
-| Class 5 | 0.996     | 0.996   | 0.996    | 1034    |
-| Class 6 | 1.000     | 1.000   | 1.000    | 1038    |
-| Class 7 | 1.000     | 1.000   | 1.000    | 1675    |
-| Class 8 | 1.000     | 1.000   | 1.000    | 1060    |
-
-
-### Macro Average
-
-| Metric     | Value           |
-|------------|-----------------|
-| Precision  | 0.999768263057  |
-| Recall     | 0.998744475895  |
-| F1-Score   | 0.999144263074  |
-
-### Accuracy
-
-| Accuracy   | 0.999575929078  |
 
 
 
