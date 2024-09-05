@@ -71,7 +71,7 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 | MFCCs+1D-CNN      | 0.81      | 0.81   | 0.81     | 0.88      | 0.90      | 0.88      | 0.96      | 0.96    | 0.96     |
 | MFCCs+2D-CNN      | 0.78      | 0.77   | 0.76     | 0.88      | 0.82      | 0.83      | 0.97      | 0.97    | 0.97     |
 
-
+Apart from benchmarking, we also validated the generalization of the proposed Whisper+LoRA and Whisper+QLoRA models by evaluating them on the AccentDB database. AccentDB is a multi-pairwise parallel corpus of structured and labelled accented speech. It contains speech samples from speakers of 4 non-native accents of English (8 speakers, 4 Indian languages); and also has a compilation of 4 native accents of English (4 countries, 13 speakers) and a metropolitan Indian accent (2 speakers). Detailed results are presented in the tables below.
 
 #### Table 5: Performance Evaluation of Whisper+LoRA on AccentDB database.
 
