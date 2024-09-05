@@ -71,3 +71,20 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 | MFCCs+1D-CNN      | 0.81      | 0.81   | 0.81     | 0.88      | 0.90      | 0.88      | 0.96      | 0.96    | 0.96     |
 | MFCCs+2D-CNN      | 0.78      | 0.77   | 0.76     | 0.88      | 0.82      | 0.83      | 0.97      | 0.97    | 0.97     |
 
+
+
+# Creating the classification report table in markdown format
+| Class | Precision | Recall | F1-Score |
+|-------|-----------|--------|----------|
+| 0     | 0.995     | 0.993  | 0.994    |
+| 1     | 0.996     | 0.979  | 0.987    |
+| 2     | 0.998     | 0.982  | 0.990    |
+| 3     | 0.987     | 0.969  | 0.978    |
+| 4     | 0.998     | 0.988  | 0.993    |
+| 5     | 0.998     | 0.998  | 0.998    |
+| 6     | 0.989     | 0.996  | 0.993    |
+| 7     | 0.991     | 0.995  | 0.993    |
+| 8     | 0.984     | 0.992  | 0.988    |
+"""
+
+
