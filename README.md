@@ -85,6 +85,34 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 | 6     | 0.989     | 0.996  | 0.993    |
 | 7     | 0.991     | 0.995  | 0.993    |
 | 8     | 0.984     | 0.992  | 0.988    |
-"""
+
+# Classification Report
+
+Below is the classification report for the confusion matrix. It provides precision, recall, F1-score, and support for each class, along with the macro average and overall accuracy.
+
+| Class   | Precision        | Recall           | F1-Score         | Support |
+|---------|------------------|------------------|------------------|---------|
+| Class 0 | 0.999758947457    | 0.998313042996   | 0.999035963932   | 4148    |
+| Class 1 | 1.000000000000    | 1.000000000000   | 1.000000000000   | 1069    |
+| Class 2 | 1.000000000000    | 0.998074290016   | 0.999036429873   | 1036    |
+| Class 3 | 1.000000000000    | 0.996168582375   | 0.998080614203   | 520     |
+| Class 4 | 1.000000000000    | 1.000000000000   | 1.000000000000   | 519     |
+| Class 5 | 0.996149368671    | 0.996149368671   | 0.996149368671   | 1034    |
+| Class 6 | 1.000000000000    | 1.000000000000   | 1.000000000000   | 1038    |
+| Class 7 | 1.000000000000    | 1.000000000000   | 1.000000000000   | 1675    |
+| Class 8 | 1.000000000000    | 1.000000000000   | 1.000000000000   | 1060    |
+
+### Macro Average
+
+| Metric     | Value           |
+|------------|-----------------|
+| Precision  | 0.999768263057  |
+| Recall     | 0.998744475895  |
+| F1-Score   | 0.999144263074  |
+
+### Accuracy
+
+| Accuracy   | 0.999575929078  |
+
 
 
