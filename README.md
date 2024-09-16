@@ -57,7 +57,7 @@ In common fine-tuning, the entire pre-trained model is updated during the traini
 ##### **Interpretation:** The cross-validation results show that the model achieves a consistent accuracy of 99% across all five folds, with no significant variation in performance metrics. The perfect precision, recall, and F1 scores for Class 1 and Class 4, as well as very high scores for Class 2 and Class 3, across each fold further indicate that the model is not overfitting. The uniform performance across different folds confirms that the model generalizes well and maintains its effectiveness regardless of the specific subset of data used for training and validation.
 
 
-#### In addition to these approaches, we also conducted experiments on our custom dataset using various standard models, including support vector machines (SVM), 1-dimensional convolutional neural networks (1D-CNN), 2-dimensional CNN (2D-CNN), long short-term memory (LSTM) networks, and a pre-trained automatic speech recognition (ASR) model for feature extraction and classification using the Wav2Vec2-large-XLS-R-53 model.
+#### In addition to these approaches, we also conducted experiments on our custom dataset using various standard models, including support vector machines (SVM), 1-dimensional convolutional neural networks (1D-CNN), 2-dimensional CNN (2D-CNN), long short-term memory (LSTM) networks, and Deep Neural Networks (DNN). 
 
 #### Table 4: Performance of standard models and traditional feature-based appraoches on our custom dataset across Tamil, Malayalam, and Kannada languages, including Macro Average Precision, Recall, and F1-Score for each language.
 
